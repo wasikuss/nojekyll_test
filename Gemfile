@@ -1,6 +1,6 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-# gem "jekyll", "~> 3.8.5"
-gem "jekyll-theme-cayman", "~> 0.1.1"
+git_source(:github) { |repo_name| "https://github.com/#{repo_name}.git" }
 
-gem "github-pages", group: :jekyll_plugins
+gem 'jekyll', "~> 3.8.5"
+gem 'jekyll-theme-cayman', github: 'wasikuss/cayman', ref: '4d8344d'
